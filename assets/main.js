@@ -48,56 +48,56 @@ const projectsData = {
     }
     
   ],
-  branding: [
+  Branding: [
     {
       title: "",
-      category: "branding",
-      images: ["assets/imgs/branding/1.webp"],
+      category: "Branding",
+      images: ["assets/imgs/Branding/1.webp"],
     },
     {
       title: "",
-      category: "branding",
-      images: ["assets/imgs/branding/2.webp"],
+      category: "Branding",
+      images: ["assets/imgs/Branding/2.webp"],
     },
     {
       title: "",
-      category: "branding",
-      images: ["assets/imgs/branding/3.webp"],
+      category: "Branding",
+      images: ["assets/imgs/Branding/3.webp"],
     },
     {
       title: "",
-      category: "branding",
-      images: ["assets/imgs/branding/4.webp"],
+      category: "Branding",
+      images: ["assets/imgs/Branding/4.webp"],
     },
     {
       title: "",
-      category: "branding",
-      images: ["assets/imgs/branding/5.webp"],
+      category: "Branding",
+      images: ["assets/imgs/Branding/5.webp"],
     },
     {
       title: "",
-      category: "branding",
-      images: ["assets/imgs/branding/6.webp"],
+      category: "Branding",
+      images: ["assets/imgs/Branding/6.webp"],
     },
     {
       title: "",
-      category: "branding",
-      images: ["assets/imgs/branding/7.webp"],
+      category: "Branding",
+      images: ["assets/imgs/Branding/7.webp"],
     },
     {
       title: "",
-      category: "branding",
-      images: ["assets/imgs/branding/8.webp"],
+      category: "Branding",
+      images: ["assets/imgs/Branding/8.webp"],
     },
     {
       title: "",
-      category: "branding",
-      images: ["assets/imgs/branding/9.webp"],
+      category: "Branding",
+      images: ["assets/imgs/Branding/9.webp"],
     },
     {
       title: "",
-      category: "branding",
-      images: ["assets/imgs/branding/10.webp"],
+      category: "Branding",
+      images: ["assets/imgs/Branding/10.webp"],
     },
   ],
   social: [
@@ -242,7 +242,7 @@ const projectsData = {
 // Category titles mapping
 const categoryTitles = {
   visual: "Visual Design",
-  branding: "Branding",
+  Branding: "Branding",
   social: "Social Media",
   packages: "Packages",
   printing: "Printing",
