@@ -1,0 +1,575 @@
+/* Add custom CSS styles below */ 
+:root {
+    --main-color:rgb(163 97 75);
+    --second-color: ;
+    
+}
+body {
+    background-color: var(--white-color) !important;
+     overflow-x: hidden;
+}
+/* قاعدة أساسية لمنع تجاوز الحدود */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+/*** Header Block **/
+.topnav-is-dark .top-navbar {
+    background-color: rgb(71 41 34)!important;
+}
+
+.s-cart-summary-count {
+    background-color: rgb(71 41 34)!important;
+}
+
+
+
+/** silder block ***/
+section.s-block.s-block--photos-slider {
+    margin-top: 0;
+}
+
+section.s-block.s-block--photos-slider .swiper-slide {
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 100% !important;
+}
+section.s-block.s-block--photos-slider .swiper-slide,
+section.s-block.s-block--photos-slider .swiper-slide img {
+    border-radius: 0 !important;
+}
+
+section.s-block.s-block--photos-slider .swiper.s-slider-container {
+    padding: 0 !important;
+}
+
+/** End silder block ***/
+
+
+body.index > div.app-inner > section > div > a {
+  height: 430px;
+  gap: 0px !important;
+}
+
+@media (max-width: 767px) {
+
+body.index > div.app-inner > section > div > a {
+  height: 140px;
+}
+  
+  body.index > div.app-inner > section > div {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 5px ;
+  }
+}
+
+
+
+
+/** banners blocks ***/
+
+section.s-block.s-block--fixed-banner.wide-placeholder > .container {
+    padding: 0 !important;
+    margin: 0 !important;
+    max-width: unset !important;
+}
+
+.banner--fixed img {
+    border-radius: 0 !important;
+}
+
+/** End banners ***/
+
+/**بداية الاقسام***/
+.banner-entry.square-photos div{
+  background-size:contain !important;
+  background-repeat:no-repeat !important;
+  background-position: center;
+}
+body.index > div.app-inner > section:nth-child(6) > div.s-block__title {
+  display: flex;
+  justify-content: center;
+}
+
+body.index > div.app-inner > section:nth-child(6) > div.s-block__title > div > h2 {
+  position: relative;
+  width: fit-content;
+  color: var(--main-color);
+}
+
+body.index > div.app-inner > section:nth-child(6) > div.s-block__title > div > h2::before {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: var(--main-color);
+    border-radius: 50%;
+    left: -36px;
+ 
+}
+body.index > div.app-inner > section:nth-child(6) > div.s-block__title > div > h2::after {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: var(--main-color);
+    border-radius: 50%;
+    right: -30px;
+  
+}
+
+body.index > div.app-inner > section:nth-child(6) > div.grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+body.index > div.app-inner > section:nth-child(6) > div.grid > a {
+  height: 220px;
+}
+
+@media (max-width: 767px) {
+  body.index > div.app-inner > section:nth-child(6) > div.grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .grid.md\:grid-cols-3.two-row.grid-flow-row.gap-3.sm\:gap-8  a{
+    padding:0;
+    height:140px;
+}
+
+  body.index > div.app-inner > section:nth-child(6) > div.grid > a {
+    height: 150px;
+  }
+  
+  .grid.md\:grid-cols-3.two-row.grid-flow-row.gap-3.sm\:gap-8 {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+}
+
+  
+  
+}
+
+/**نهاية الاقسام***/
+
+
+
+/**بداية المنتجات***/
+
+
+body.index .s-product-card-image img.loaded {
+ 
+    background: white;
+}
+
+
+body.index .s-product-card-content-title a {
+    color: var(--main-color)!important;
+}
+
+button.s-button-element.s-button-btn.s-button-outline.s-button-wide.s-button-primary-outline {
+    background: var(--main-color);
+    color: white;
+}
+
+
+
+
+
+div.s-slider-block__title > div.s-slider-block__title-left{display:none;}
+
+div.s-slider-block__title > div.s-slider-block__title-right {
+    padding-left:0 !important;
+}
+
+ div.s-slider-block__title > div.s-slider-block__title-right > h2 {
+  width: fit-content !important;
+  color: var(--main-color);
+     padding:0px 30px;
+    
+}
+body.index div.s-slider-block__title > div.s-slider-block__title-right > h2::before {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: var(--main-color);
+    border-radius: 50%;
+    left: 0;
+ 
+}
+body.index div.s-slider-block__title > div.s-slider-block__title-right > h2::after {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: var(--main-color);
+    border-radius: 50%;
+    right: 0;
+  
+}
+body.index div.s-slider-block__title {
+      display: flex !important;
+      justify-content: center;
+      align-content: center;
+}
+.s-products-slider-card.swiper-slide {
+    border:1px solid var(--main-color)!important;
+}
+.swiper-android .swiper-slide, .swiper-wrapper {
+    gap:10px;
+}
+
+
+
+
+/**سكشن واحد***/
+body.index>div.app-inner>section:nth-child(9)>div>a {
+    height: 560px;
+    gap: 0px !important;
+}
+
+@media (max-width: 767px) {
+
+    body.index>div.app-inner>section:nth-child(9)>div>a {
+        height: 185px;
+    }
+
+    body.index>div.app-inner>section:nth-child(9)>div {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 8px;
+    }
+}
+
+
+
+/**سكشن اتنين***/
+
+body.index>div.app-inner>section:nth-child(11)>div {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+body.index>div.app-inner>section:nth-child(11)>div>a {
+    height: 441px;
+}
+
+body.index>div.app-inner>section:nth-child(11)>div>a>div {
+    background-position: bottom !important;
+}
+
+
+
+@media (max-width: 767px) {
+
+    body.index>div.app-inner>section:nth-child(11)>div>a {
+        height: 142px;
+    }
+
+    body.index>div.app-inner>section:nth-child(11)>div {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 9px;
+    }
+
+   
+}
+
+/**سكشن تلاتة***/
+
+body.index > div.app-inner> section:nth-child(12) > div>a{
+  height: 430px;
+}
+
+@media (max-width: 767px) {
+
+body.index > div.app-inner> section:nth-child(12) > div>a{
+  height: 140px;
+}
+  
+body.index > div.app-inner> section:nth-child(12) > div{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+  }
+  
+  
+  
+}
+
+
+
+
+/*المميزات*/
+body.index .s-block__title h2 {
+    color: var(--main-color)!important;
+}
+
+/*start اراء العملاء*/
+body.index .s-reviews-header-wrapper {  
+    position: relative;
+    color: var(--main-color) !important;
+    justify-content: center !important;
+}
+
+body.index .s-reviews-header-wrapper:before {
+    content: "";
+    background: var(--main-color);
+    position: absolute;
+    left: 526px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+}
+
+body.index .s-reviews-header-wrapper:after {
+    content: "";
+    background: var(--main-color);
+    position: absolute;
+    right: 526px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+}
+
+@media(max-width:767px)
+{
+
+    /*start اراء العملاء*/
+body.index .s-reviews-header-wrapper {  
+    position: relative;
+    color: var(--main-color) !important;
+    justify-content: center !important;
+}
+
+body.index .s-reviews-header-wrapper:before {
+    content: "";
+    background: var(--main-color);
+    position: absolute;
+    left: 108px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+}
+
+body.index .s-reviews-header-wrapper:after {
+    content: "";
+    background: var(--main-color);
+    position: absolute;
+    right: 117px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+}
+
+.s-reviews-header {
+    margin-bottom: 0 !important;
+}
+
+}
+
+
+
+.s-reviews-header {
+    margin-bottom: 0 !important;
+}
+
+/*last background*/
+.full-width-banner {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.full-width-banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+
+
+/**بداية مميزاتنا***/
+body.index > div.app-inner > section:nth-child(15) > div.s-block__title {
+  display: flex;
+  justify-content: center;
+}
+
+body.index > div.app-inner > section:nth-child(15) > div.s-block__title > div > h2 {
+  position: relative;
+  width: fit-content;
+  color: var(--main-color);
+}
+
+body.index > div.app-inner > section:nth-child(15) > div.s-block__title > div > h2::before {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: var(--main-color);
+    border-radius: 50%;
+    left: -36px;
+ 
+}
+body.index > div.app-inner > section:nth-child(15) > div.s-block__title > div > h2::after {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: var(--main-color);
+    border-radius: 50%;
+    right: -30px;
+  
+}
+body.index > div.app-inner.flex.flex-col.min-h-full > section:nth-child(15) > div.grid{
+     grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+@media(max-width:767px){
+    body.index > div.app-inner.flex.flex-col.min-h-full > section:nth-child(15) > div.grid a {
+    height:110px; 
+}
+}
+
+
+/**نهاية مميزاتنا***/
+
+
+
+
+/*footer*/
+@media(max-width: 767px) {
+    footer.store-footer * {
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+.footer-is-light .store-footer .store-footer__inner {
+    background-color: rgb(71 41 34)!important;
+    color: white;
+}
+body.index.footer-is-light .store-footer {
+    margin: 0px !important;
+}
+.store-footer__inner{border:none!important;
+}
+
+a.banner-entry.square-photos {
+    background-color: unset !important;
+}
+#swiper-wrapper-e6af49df83a01e90 > div > a > img {
+    border: 0;
+}
+/********section:nth-child(7)********/
+#app > div.app-inner.flex.flex-col.min-h-full > section:nth-child(7) > div {
+    display:flex;
+    flex-direction:row;
+    
+    
+}
+section:nth-child(7) a.banner-entry.square-photos {
+    width:50%
+}
+
+
+/********** مميزاتنا *********/
+@media (max-width: 767px) {
+section.s-block.s-block--banners.container .grid.one-row.md\:grid-cols-3.grid-flow-row.gap-3.sm\:gap-8:last-child {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-content:center;
+}
+
+section.s-block.s-block--banners.container .grid.one-row.md\:grid-cols-3.grid-flow-row.gap-3.sm\:gap-8:last-child a:nth-child(1) {
+    flex-basis:47%;
+}
+
+section.s-block.s-block--banners.container .grid.one-row.md\:grid-cols-3.grid-flow-row.gap-3.sm\:gap-8:last-child a:nth-child(2) {
+    flex-basis:47%;
+}
+section.s-block.s-block--banners.container .grid.one-row.md\:grid-cols-3.grid-flow-row.gap-3.sm\:gap-8:last-child a:nth-child(3) {
+    flex-basis:47%;
+}
+
+
+
+#app > div.app-inner.flex.flex-col.min-h-full > section:nth-child(9) > div > a:nth-child(2) > div {
+ background-position: top !important
+
+}
+}
+
+.my-stat-item {
+    text-align: center;
+    background: white;
+    padding: 30px 20px;
+    border-radius: 12px;
+    box-shadow: none;
+    transition: all 0.3s ease;
+    min-width: 180px;
+    border: none
+    ;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: myFadeUp 0.6s ease forwards;
+}
+
+@media (max-width: 768px) {
+                .my-stats-container {
+                    gap: 15px;
+                    max-width: 400px;
+                }
+                .my-stat-item {
+                    min-width: 150px;
+                    padding: 20px 15px;
+                    flex: 0 0 calc(50% - 8px);
+                }
+                .my-counter { font-size: 1.6rem; }
+                .my-icon-circle { width: 50px; height: 50px; font-size: 20px; }
+            }
+            
+            
+            body.index > div.app-inner.flex.flex-col.min-h-full > section:nth-child(9) > div > a:nth-child(2) > div{
+    background-position:top !important ;
+}
+
+body.index > div.app-inner.flex.flex-col.min-h-full > section:nth-child(11) > div > a:nth-child(1) > div {
+
+background-position:top !important ;
+}
+
+
+@media (max-width: 767px){
+body.index>div.app-inner>section:nth-child(11)>div>a>div {
+    background-position: top !important;
+}
+
+    body.index > div.app-inner>section:nth-child(9)>div>a {
+        height: 174px !important;
+    }
+
+
+    body.index > div.app-inner.flex.flex-col.min-h-full > section:nth-child(9) > div > a:nth-child(1) > div
+ {
+        background-position: center !important ;
+    }
+      body.index > div.app-inner.flex.flex-col.min-h-full > section:nth-child(9) > div > a:nth-child(1) > div{
+
+        background-position: center !important;
+    }
+}
